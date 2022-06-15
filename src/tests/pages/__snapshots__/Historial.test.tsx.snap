@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas sobre Historial.tsx debe mostrar el componente 1`] = `ShallowWrapper {}`;
+
+exports[`Pruebas sobre Historial.tsx debe mostrar el componente 2`] = `ShallowWrapper {}`;

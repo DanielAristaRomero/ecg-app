@@ -1,4 +1,6 @@
 import { lazy, LazyExoticComponent } from "react";
+import Home from "../pages/Home";
+import Historial from "../pages/Historial";
 import {
   faFileContract,
   faHeartPulse,
@@ -15,21 +17,21 @@ interface Route {
   icon: IconDefinition;
 }
 
-const lazyHome = lazy(() => import("../pages/Home"));
-const lazyHistorial = lazy(() => import("../pages/Historial"));
+// const lazyHome = () => import("../pages/Home");
+// const lazyHistorial = lazy(() => import("../pages/Historial"));
 
 export const routes: Route[] = [
   {
     to: "/inicio",
     path: "inicio",
-    component: lazyHome,
+    component: Home,
     name: "Inicio",
     icon: faHeartPulse,
   },
   {
     to: "/historial",
     path: "historial",
-    component: lazyHistorial,
+    component: Historial,
     name: "Historial",
     icon: faFileContract,
   },
